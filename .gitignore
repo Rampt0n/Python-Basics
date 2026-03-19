@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generierte Ausgaben (werden zur Laufzeit erzeugt)
+output/
+daten/
+
+# OS
+.DS_Store
+Thumbs.db
