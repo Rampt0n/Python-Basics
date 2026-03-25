@@ -6,3 +6,4 @@ openpyxl>=3.1
 requests>=2.31
 plotly>=5.15
 pyarrow>=14.0
+nbformat==5.10.4
