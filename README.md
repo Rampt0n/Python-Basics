@@ -6,15 +6,15 @@ Eine Notebook-Reihe für Einsteiger ohne Programmiervorkenntnisse. Ziel ist es, 
 
 Der Workshop ist in zwei Sessions à ca. 4 Stunden aufgeteilt. Den detaillierten Zeitplan und Hinweise für Trainer enthält [`SESSION_GUIDE.md`](SESSION_GUIDE.md).
 
-### Session 1 — Python & pandas Grundlagen
+### Session 1 - Python & pandas Grundlagen
 
 | Notebook | Thema |
 |----------|-------|
-| `01_Python_Grundlagen.ipynb` | Variablen, Datentypen, Bedingungen, Schleifen, Funktionen |
+| `01_Python_Grundlagen.ipynb` | Variablen, Datentypen, Bedingungen, Schleifen, Funktionen, Dictionaries |
 | `02_Pandas_Grundlagen.ipynb` | DataFrames, filtern, aggregieren, zusammenführen |
-| `Session1_Extras.ipynb` | **Optional:** List Comprehensions, Lambda, Method Chaining, `.query()`, erweitertes `.agg()` |
+| `Session1_Extras.ipynb` | **Optional:** List Comprehensions, `dict.get()`, try/except, String-Methoden, Method Chaining, `.query()`, erweitertes `.agg()`, `pd.cut()`/`pd.qcut()` |
 
-### Session 2 — ETL-Pipeline & Visualisierung
+### Session 2 - ETL-Pipeline & Visualisierung
 
 | Notebook | Thema |
 |----------|-------|
@@ -22,7 +22,7 @@ Der Workshop ist in zwei Sessions à ca. 4 Stunden aufgeteilt. Den detaillierten
 | `04_ETL_Transform.ipynb` | Bereinigen, Typen korrigieren, Duplikate, Anreicherung |
 | `05_ETL_Load.ipynb` | Exportieren (CSV/Excel/SQLite), vollständige Pipeline |
 | `06_Visualisierung.ipynb` | matplotlib, seaborn, plotly |
-| `Session2_Extras.ipynb` | **Optional:** Regex, Parquet, Window Functions, interaktive Dashboards, Logging, Chunking |
+| `Session2_Extras.ipynb` | **Optional:** Parquet, Window Functions, interaktive Dashboards, Logging, Chunking |
 
 Jedes Notebook enthält Erklärungen, kommentierte Code-Beispiele und Übungsaufgaben.
 
@@ -30,38 +30,9 @@ Die Musterlösungen befinden sich in separaten **`*_Loesungen.ipynb`**-Dateien, 
 
 ## Voraussetzungen
 
-- Python 3.10 oder neuer
-- Jupyter Notebook oder JupyterLab
+Die Notebooks werden über **Coder** bereitgestellt. Alle erforderlichen Pakete sind in der Umgebung vorinstalliert - keine lokale Installation notwendig.
 
-## Installation
-
-**1. Repository klonen oder Dateien herunterladen**
-
-**2. Virtuelle Umgebung erstellen (empfohlen)**
-
-```bash
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-
-# macOS / Linux
-source venv/bin/activate
-```
-
-**3. Abhängigkeiten installieren**
-
-```bash
-pip install -r requirements.txt
-```
-
-**4. Jupyter starten**
-
-```bash
-jupyter notebook
-```
-
-Dann die Notebooks in der Reihenfolge 01 bis 06 öffnen.
+Die Notebooks einfach in der Reihenfolge 01 bis 06 öffnen und ausführen.
 
 ## Pakete
 
@@ -87,8 +58,16 @@ Session1_Extras                                                       Session2_E
   (optional)                                                            (optional)
 ```
 
+## Weiterführende Ressourcen
+
+| Ressource | Beschreibung | Link |
+|-----------|-------------|------|
+| **Python Dokumentation** | Offizielle Referenz zum Nachschlagen von Funktionen und Syntax | [docs.python.org](https://docs.python.org/3/) |
+| **W3Schools Python** | Interaktive Tutorials mit "Try it yourself"-Beispielen | [w3schools.com/python](https://www.w3schools.com/python/default.asp) |
+| **GeeksforGeeks Python** | Ausführliche Erklärungen und viele Beispiele | [geeksforgeeks.org/python](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/) |
+
 ## Hinweise für Trainer
 
 - Die `output/`- und `daten/`-Ordner werden zur Laufzeit automatisch von den Notebooks erstellt.
-- Musterlösungen liegen als separate Dateien im Unterordner **`Loesungen/`** (z.B. `Loesungen/01_Python_Grundlagen_Loesungen.ipynb`). Teilnehmer müssen sie bewusst öffnen — in den Hauptnotebooks sind keine Lösungen enthalten.
+- Musterlösungen liegen als separate Dateien im Unterordner **`Loesungen/`** (z.B. `Loesungen/01_Python_Grundlagen_Loesungen.ipynb`). Teilnehmer müssen sie bewusst öffnen - in den Hauptnotebooks sind keine Lösungen enthalten.
 - Alle Notebooks funktionieren offline. Lediglich das API-Beispiel in Notebook 3 benötigt eine Internetverbindung; es enthält einen Fallback für den Offline-Betrieb.
